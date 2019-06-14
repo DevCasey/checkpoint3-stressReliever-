@@ -1,10 +1,12 @@
+
 const container = document.getElementById('container');
 const gameButton = document.createElement('button');
 
 
 gameButton.addEventListener('click', function (event) {
-    let randomBox = Math.floor(Math.random() * $('div').length);
-    console.log(randomBox);
+    let getRandom = document.getElementsByTagName('div');
+    Math.floor(Math.random(getRandom));
+    
 });
 
 let userInput = prompt('Enter a number between 10-20: ');
