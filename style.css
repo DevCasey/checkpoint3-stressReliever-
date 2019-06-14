@@ -1,0 +1,9 @@
+#container {
+    display: grid;
+}
+
+.game-board {
+    border: 1px solid black;
+    height: 35px;
+    width: 35px;
+}
