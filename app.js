@@ -1,13 +1,16 @@
 
 const container = document.getElementById('container');
 const gameButton = document.createElement('button');
+// const randomNum = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
-
-gameButton.addEventListener('click', function (event) {
-    let getRandom = document.getElementsByTagName('div');
-    Math.floor(Math.random(getRandom));
+// gameButton.addEventListener('click', function (event) {
+//     const getRandomElement = gameBoard => {
+//         const elements = document.querySelectorAll('game-board');
+//         const num = randomNum(0, elements.length -1)
+//         return elements[num];
+//     }
     
-});
+// });
 
 let userInput = prompt('Enter a number between 10-20: ');
 if (isNaN(userInput)) {
