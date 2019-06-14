@@ -1,7 +1,11 @@
 const container = document.getElementById('container');
-// let gameBoard = document.createElement('div');
-// gameBoard.setAttribute('class', 'game-board');
+const gameButton = document.createElement('button');
 
+
+gameButton.addEventListener('click', function (event) {
+    let randomBox = Math.floor(Math.random() * $('div').length);
+    console.log(randomBox);
+});
 
 let userInput = prompt('Enter a number between 10-20: ');
 if (isNaN(userInput)) {
@@ -14,7 +18,12 @@ if (isNaN(userInput)) {
     alert('That\'s greater than 20');
     location.reload();
 } else {
-    console.log('Something went wrong');
+    gameButton.textContent = 'Play';
+    gameButton.style.height = '25px';
+    gameButton.style.width = '50px';
+    gameButton.style.borderRadius = '7px';
+    gameButton.style.marginBottom = '15px';
+    container.appendChild(gameButton);
 }
 
 
