@@ -2,6 +2,10 @@ body {
     background: grey;
 }
 
+button {
+    margin: auto;
+}
+
 #container {
     margin-top: 25px;
     display: grid;
@@ -9,8 +13,6 @@ body {
     height: auto;
     width: auto;
 }
-
-
 
 .game-board > div {
     display: inline-block;
